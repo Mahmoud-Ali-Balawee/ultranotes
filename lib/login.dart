@@ -14,11 +14,6 @@ class Login extends StatelessWidget {
     }
   }
 
-  String? _validateUsername(value) {
-    if (value!.isEmpty) { return 'Username missing';}
-    return null;
-  }
-
   String? _validatePassword(value) {
     if (value!.isEmpty) { return 'Password missing';}
     if (value.length<6) { return 'Password should be at least 6 characters';}
